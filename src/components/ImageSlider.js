@@ -26,14 +26,14 @@ const ImageSlider = ({slides}) => {
     }
 
     const prevSlide = () => {
-        //setCurrent(current === 0 ? length - 1 : current - 1)
+        setCurrent(current === 0 ? length - 1 : current - 1)
 
-        if (current === 0) {
-            length = length - 1
-        }
-        else {
-            setCurrent(current - 1)
-        }
+        // if (current === 0) {
+        //     length = length - 1
+        // }
+        // else {
+        //     setCurrent(current - 1)
+        // }
     }
 
     if (!Array.isArray(slides) || slides.length <= 0) {
